@@ -1,0 +1,117 @@
+.form__contact {
+  display: flex;
+  padding: 15px 30px;
+  padding-bottom: 0;
+  background-color: var(--grey-form);
+}
+
+.form__contact:nth-child(4) {
+  padding-top: 25px;
+  padding-bottom: 0;
+}
+
+.form__input-contact {
+  padding: 8px 12px;
+  width: 240px;
+  border: 1px solid var(--grey);
+  border-left: none;
+  border-right: none;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  background-color: var(--grey-form);
+}
+
+.form__input--error {
+  border-bottom: 1px solid var(--orange) !important;
+}
+
+.form__input:focus {
+  outline: none;
+}
+
+.form__input-button {
+  position: relative;
+  width: 27px;
+  background: url("../images/cancel-button.svg") no-repeat center center;
+  background-color: var(--light-grey);
+  border: 1px solid var(--grey);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form__input-button:hover {
+  background: url("../images/cancel-button-red.svg") no-repeat center center;
+  background-color: var(--light-grey);
+  border: 1px solid var(--orange);
+  transition: 0.3s;
+}
+
+.form__input-close {
+  position: absolute;
+  left: 5px;
+  top: 10px;
+}
+
+.form__group {
+  position: relative;
+  min-height: 42px;
+  margin: 15px 30px;
+  margin-bottom: 15px;
+}
+
+.form__input {
+  width: 390px;
+  border: 0;
+  border-bottom: 1px solid var(--grey);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+  background-color: transparent;
+}
+
+.form__input:focus {
+  outline: none;
+}
+
+.form__label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--txt-color);
+  font-size: 14px;
+  font-weight: 600;
+  z-index: -1;
+  transition: 0.3s;
+}
+
+.form__label--focused ~ .form__label {
+  top: -16px;
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+.form__input:focus ~ .form__label {
+  top: -16px;
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+.form__required {
+  color: var(--firm);
+}
+
+.form__person {
+  padding: 30px;
+  padding-top: 0;
+}
+
+.form__container {
+  margin: 0;
+  padding: 0;
+}
+
+.form__item-title {
+  color: var(--txt-color);
+}

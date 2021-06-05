@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding-bottom: 40px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--dark);
+  background-color: var(--light-grey);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--firm);
+  transition: color 0.2s ease;
+}
+
+a:active {
+  color: var(--orange);
+  transition: color 0.2s ease;
+}
+
+ul {
+  list-style: none;
+}
+
+.icon {
+  vertical-align: middle;
+}
+
+@media (min-width: 1024px) {
+  .brake {
+    display: none;
+  }
+}

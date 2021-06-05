@@ -1,0 +1,94 @@
+.dropdown-container {
+  position: relative;
+  width: 123px;
+  border: 1px solid var(--grey);
+}
+
+.dropdown-toggle {
+  position: relative;
+  padding: 10px 12px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  color: var(--dark);
+  cursor: pointer;
+  background-color: var(--light-grey);
+  transition: all ease-in-out 0.3s;
+}
+
+.dropdown-toggle:hover, .dropdown-toggle:active, .dropdown-toggle:focus {
+  background-color: var(--dropdown-active);
+  color: var(--dark);
+}
+
+.dropdown-menu {
+  position: absolute;
+  left: -1px;
+  display: none;
+  width: 123px;
+  border: 1px solid var(--grey);
+  background-color: var(--light-grey);
+  z-index: 10;
+}
+
+.dropdown-group {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 10;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 4px 11px 7px;
+  line-height: 16px;
+  text-decoration: none;
+  color: var(--dark);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  background-color: var(--dropdown-item);
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.dropdown-item:hover, .dropdown-item:active, .dropdown-item:focus {
+  background-color: var(--dropdown-active);
+  color: var(--dark);
+}
+
+.dropdown-menu, .dropdown-toggle {
+  position: relative;
+}
+
+.dropdown-toggle::before {
+  content: "";
+  position: absolute;
+  right: 12px;
+  top: 40%;
+  width: 12px;
+  height: 12px;
+  background: url("../images/angle.svg") no-repeat center center;
+  margin-top: -2.5px;
+  background-color: rgba(0, 0, 0, 0);
+  transition: all ease-in-out 0.2s;
+}
+
+.dropdown-menu {
+  position: relative;
+  z-index: 10;
+}
+
+.dropdown-open .dropdown-menu.dropdown-active {
+  position: absolute;
+  display: block;
+}
+
+.dropdown-open .dropdown-toggle {
+  color: var(--dark);
+}
+
+.dropdown-open .dropdown-toggle:before {
+  transform: rotate(-180deg);
+}

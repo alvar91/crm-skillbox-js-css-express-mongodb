@@ -1,0 +1,15 @@
+:root {
+    /* Colors */
+    --light: #FFF;
+    --grey: #C8C5D1;
+    --light-grey: #E5E5E5;
+    --active-grey: #C8C5D1;
+    --grey-form: #F4F3F6;
+    --txt-color: #B0B0B0;
+    --dark: #333;
+    --firm: #9873FF;
+    --light-firm: #c09cfc;
+    --orange: #F06A4D;
+    --dropdown-active: #C8C5D1;
+    --dropdown-item: #E5E5E5;
+  }

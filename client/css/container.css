@@ -1,0 +1,22 @@
+.container {
+  margin: 0px auto;
+  padding: 0 20px;
+  width: 984px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  background-color: var(--grey-form);
+}
+
+.errors-container {
+  display: flex;
+  justify-content: center;
+  padding: 8px 30px;
+}

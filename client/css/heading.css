@@ -1,0 +1,8 @@
+.heading__level-1 {
+    margin: 0;
+    margin-bottom: 26px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    color: var(--dark);
+  }

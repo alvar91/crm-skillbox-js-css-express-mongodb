@@ -1,0 +1,10 @@
+.form-errors__item {
+    margin: 0;
+    width: 255px;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: var(--orange);
+}

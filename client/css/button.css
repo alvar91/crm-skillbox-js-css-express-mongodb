@@ -1,0 +1,123 @@
+.button {
+  padding: 14px 27px;
+  border: 1px solid var(--firm);
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 600;
+  color: var(--firm);
+  background-color: var(--light-grey);
+  transition: color 0.2s ease, background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.button-contact {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: none;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 19px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.button-contact:hover {
+  color: var(--firm);
+  transition: color 0.2s ease;
+}
+
+.button:hover,
+.button:focus {
+  color: var(--light-grey);
+  border: 1px solid var(--light-firm);
+  background-color: var(--light-firm);
+  cursor: pointer;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.button:active {
+  background-color: var(--firm);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.button:disabled {
+  color: var(--light);
+  border: none;
+  background-color: var(--grey);
+  cursor: not-allowed;
+}
+
+.button__add-icon {
+  vertical-align: middle;
+  transition: fill 0.2s ease;
+}
+
+.button:hover, .button:active .button__add-icon path {
+  fill: var(--light-grey);
+  transition: fill 0.2s ease;
+}
+
+.button-filled:disabled {
+  color: var(--light);
+  border: none;
+  background-color: var(--grey);
+  cursor: not-allowed;
+}
+
+.button-filled {
+  background-color: var(--firm);
+}
+
+.button-filled--pagination {
+  padding: 5px 10px;
+  color: var(--light-grey);
+}
+
+.button-filled--save {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+  width: 147px;
+  height: 44px;
+  border: none;
+  color: var(--light);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button-link {
+  margin-bottom: 20px;
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid var(--dark);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 10px;
+  letter-spacing: 0px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.button-loader {
+  align-self: center;
+  margin: 6px;
+  width: 16px;
+  height: 16px;
+  background: url("../images/button-loader.svg") center center no-repeat;
+  animation: rotate 1.4s linear infinite;
+}

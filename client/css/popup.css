@@ -1,0 +1,91 @@
+@keyframes showActiveCard {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.popup {
+  display: block;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  overflow: auto;
+  animation: showActiveCard 0.8s forwards;
+}
+.popup__content {
+  display: flex;
+  //padding: 15px 30px;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 450px;
+  transform: translate(-50%, -50%);
+  background-color: var(--light);
+}
+
+.popup__button-close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 29px;
+  height: 29px;
+  padding: 0;
+  border: 0;
+  text-indent: -9999px;
+  background: no-repeat 50% 50%;
+  background-image: url("../images/close-button.svg");
+  z-index: 3;
+  outline: none;
+  cursor: pointer;
+}
+.popup__title {
+  margin: 0;
+  margin: 15px 30px;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: left;  
+}
+
+.popup__id {
+  padding-left: 9px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  color: var(--txt-color);
+}
+
+.popup-delete {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popup-delete__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: center;
+}
+
+.popup-delete__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0px;
+}
