@@ -5,7 +5,7 @@
 `brew install node`
 * Установите [yarn](https://yarnpkg.com/lang/en/docs/install/)
 `brew install yarn`
-* Перейдите в корневую директорию проекта "cd backend"
+* Перейдите в корневую директорию проекта `cd backend`
 * Установите зависимости проекта `yarn`
 
 ## Запуск проекта:
