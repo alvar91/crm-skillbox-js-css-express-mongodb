@@ -1,5 +1,3 @@
-# Курсовая работа по курсу Javascript «Базовый уровень». Варов А.П.
-
 ## Установка
 * Установите [Node.js](https://nodejs.org/en/download/)
 `brew install node`
